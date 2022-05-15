@@ -1,0 +1,38 @@
+﻿@page "/"
+
+<PageTitle>Index</PageTitle>
+
+<h1>Registro de Ocupaciones</h1>
+
+<Form>
+	<Card Shadow="Shadow.Default" Border="Border.Primary">
+		<CardHeader Background="Background.Primary" TextColor="TextColor.White"><Icon Name="@("fa-user-circle")" /> <Strong>Datos Personales</Strong></CardHeader>
+		<CardBody>
+			<Field Horizontal="true">
+				<FieldLabel ColumnSize="ColumnSize.Is2">OcupacionId</FieldLabel>
+				<FieldBody ColumnSize="ColumnSize.Is1">
+					<TextEdit Placeholder="" />
+				</FieldBody>
+			</Field>
+			<Field Horizontal="true">
+				<FieldLabel ColumnSize="ColumnSize.Is2">Descripcion</FieldLabel>
+				<FieldBody ColumnSize="ColumnSize.Is5">
+					<TextEdit Placeholder="Ex: Formacion academica anterior" />
+				</FieldBody>
+			</Field>
+			<Field Horizontal="true">
+				<FieldLabel ColumnSize="ColumnSize.Is2">Salario</FieldLabel>
+				<FieldBody ColumnSize="ColumnSize.Is3">
+					<TextEdit Placeholder="Ex: 5,000" />
+				</FieldBody>
+			</Field>
+		</CardBody>
+	</Card>
+
+	<br />
+
+	<Button Color="Color.Success" Outline Block="true" Type="ButtonType.Submit" PreventDefaultOnSubmit="true" Shadow="Shadow.Small" Border="Border.RoundedPill">
+		<Icon Name="@("fa-check")" />
+		Enviar
+	</Button>
+</Form>
